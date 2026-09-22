@@ -5,6 +5,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import type { Metadata } from "next";
 import { auth } from "@/auth";
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 const APP_NAME = "Alive Home ai";
 const APP_DEFAULT_TITLE = "Alive Home ai";
 const APP_TITLE_TEMPLATE = "%s - Alive Home ai";
