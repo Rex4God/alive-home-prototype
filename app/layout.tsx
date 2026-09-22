@@ -6,6 +6,11 @@ import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import "./globals.css";
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 const APP_NAME = "Alive Home";
 const APP_DEFAULT_TITLE = "Alive Home";
 const APP_TITLE_TEMPLATE = "%s | Alive Home";

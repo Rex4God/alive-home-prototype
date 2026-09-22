@@ -3,6 +3,11 @@ import type { Metadata } from "next";
 import { auth } from "@/auth";
 import SavedProperties from "@/components/molecules/SavedProperties";
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export const metadata: Metadata = {
   title: "Saved Property | Alive Home",
   description: "Alive Home AI - AI-driven real estate technology platform",
